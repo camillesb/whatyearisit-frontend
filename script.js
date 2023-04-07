@@ -7,7 +7,7 @@ fetch('https://whatyearisit-backend-iota-mocha.vercel.app/year')
 //récupère info sous format json
 .then(data => {
     //console.log(data.year)
-    document.querySelector('#year').textContent = data.year;
+    document.querySelector('#year').textContent = `${data.year}`;
 })
 //affiche info
 .catch(error => console.error(error));
